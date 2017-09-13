@@ -16,18 +16,26 @@ class MagicSocket{
     private:
         int mysockfd;
         int backlog;
+        MagicSocket(int);
 
     public:
-
-        MagicSocket(bool);
-        MagicSocket(int);
-        void setBacklog(int);
-        void Listen(int);
+        /* The constructor parameter specifies wether the socket should be reusable or not */
+        MagicSocket(bool reusable);  
+        /* Edit the backlog to whatever you need (negative values will be ignored) */
+        void setBacklog(int newBacklogValue);
+        /* Bind the socket and start listening */
+        void Listen(int port);
+        /* Accept an incoming connection and return the new socket */
         MagicSocket Accept();
-        int Connect(const char*, int);
-        int Receive(void*, int);
-        int Send(const char*);
+        /* Connect to a node */
+        int Connect(const char* ip, int port);
+        /* Receive data on a buffer */
+        int Receive(void* buffer, int bufflen);
+        /* Send a message */
+        int Send(const void* buffer, int bufflen);
+        /* Close the socket */
         void Close();
+        /* Destroy the socket */
         ~MagicSocket();
 };
 
