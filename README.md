@@ -2,8 +2,8 @@
 A simple wrapper for sockets in C++.
 
 ## Why
-During the development of a personal project I had to use sockets in C++. Instead of writing all the cluttering code, I decided to write a simple wrapper for future reuse.
-The class `MagicSocket` implements all the classic socket functions but at an higher level.
+During the development of a personal project I had to use sockets in C++. Instead of writing all the cluttering code, I decided to write a simple wrapper for future reuse.<br>
+The class `MagicSocket` implements all the classic socket functions but at an higher level.<br>
 
 ## Example code
 
@@ -38,3 +38,9 @@ int main()
     s.Close(); //close
 }
 ```
+
+## Credits
+Idea and code: [Antonello Galipò](https://github.com/magicleon94)
+Code and debug: [Federico Rizzo](https://github.com/federix93)
+
+
