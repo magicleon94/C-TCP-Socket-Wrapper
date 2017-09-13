@@ -90,8 +90,7 @@ int MagicSocket::Receive(void* buffer, int bufflen ){
     return recv(mysockfd,buffer,bufflen,0);
 }
 
-int MagicSocket::Send(const char *msg){
-    int len = strlen(msg);
+int MagicSocket::Send(const void* msg, int len){
     return send(mysockfd,msg,len,0);
 }
 MagicSocket::~MagicSocket(){
