@@ -33,7 +33,8 @@ int main()
     MagicSocket newSocket = s.Accept(); //wait and accept a connection. This is a blocking call.
     char msg[20];
     int len = newSocket.Receive(msg, 20); //receive on a buffer
-    std::cout << "Received: " << msg << std::endl;
+    std::cout<<"Received "<<len<<" bytes"<<std::endl;
+    std::cout << "Received message: " << msg << std::endl;
     s.Close(); //close
 }
 ```
