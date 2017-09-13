@@ -40,7 +40,7 @@ int main()
 ```
 
 ## Credits
-Idea and code: [Antonello Galipò](https://github.com/magicleon94)
+Idea and code: [Antonello Galipò](https://github.com/magicleon94)<br>
 Code and debug: [Federico Rizzo](https://github.com/federix93)
 
 
