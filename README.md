@@ -40,6 +40,7 @@ int main()
     s.Close(); //close
 }
 ```
+Note that the ´NewSocket´ **IS NOT** reusable.
 
 ## Credits
 Idea and code: [Antonello Galipò](https://github.com/magicleon94)<br>
