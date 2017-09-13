@@ -1,2 +1,3 @@
-# C-TCP-Socket-Wrapper
+# MagicSocket
 A simple wrapper for sockets in C++.
+
