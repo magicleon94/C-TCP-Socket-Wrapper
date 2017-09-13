@@ -4,6 +4,8 @@ A simple wrapper for sockets in C++.
 ## Why
 During the development of a personal project I had to use sockets in C++. Instead of writing all the cluttering code, I decided to write a simple wrapper for future reuse.<br>
 The class `MagicSocket` implements all the classic socket functions but at an higher level.<br>
+## Usage
+Just include `MagicSocket.hpp` and `MagicSocket.cpp` in your project.
 
 ## Example code
 
